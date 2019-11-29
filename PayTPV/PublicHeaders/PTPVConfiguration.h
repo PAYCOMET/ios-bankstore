@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 7/28/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Represents the configuration of the contracted product.
  
- You provide a PTPVConfiguration instance to the PTPVAPIClient which will use it when making api calls to PAYTPV.
+ You provide a PTPVConfiguration instance to the PTPVAPIClient which will use it when making api calls to PAYCOMET.
 
- In order to use the PAYTPV payment gateway in your business, you must have the necessary configuration parameters. These can be obtained through the PAYTPV customer management platform at https://secure.paytpv.com/cp_control/
+ In order to use the PAYCOMET payment gateway in your business, you must have the necessary configuration parameters. These can be obtained through the PAYCOMET customer management platform at https://dashboard.paycomet.com/cp_control/
 
  Once inside the platform, the configuration of the contracted product can be reviewed through the menu My products -> Configure product.
 

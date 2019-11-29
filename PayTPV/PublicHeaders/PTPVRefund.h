@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 8/7/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param authCode Original bank code of the authorization of the transaction
  @param order Original reference of the operation.
- @param currency Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ @param currency Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  @param amount Optional. For partial refunds. Amount to be refunded in integer format. 1.00 EURO = 100, 4.50 EUROS = 450...
 
  @return A PTPVRefund instance populated with the provided values
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param authCode Original bank code of the authorization of the transaction
  @param order Original reference of the operation.
- @param currency Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ @param currency Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
 
  @return A PTPVRefund instance populated with the provided values
  */
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSString *order;
 
 /**
- Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  */
 @property (nonatomic, copy, nullable) PTPVCurrency *currency;
 

@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 8/4/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param amount Amount of the operation in integer format. 1.00 EURO = 100, 4.50 EUROS = 450...
  @param order Reference of the operation. Must be unique on every valid transaction
- @param currency Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ @param currency Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  @param productDescription Optional. Description of the product
  @param owner Optional. Description of the transaction
  @param scoring Optional. Risk score of the transaction. Between 0 and 100
@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSString *order;
 
 /**
- Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  */
 @property (nonatomic, copy, nullable) PTPVCurrency *currency;
 

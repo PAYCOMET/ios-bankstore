@@ -3,7 +3,7 @@
 //  PAYTPV Swift Example
 //
 //  Created by Mihail Cristian Dumitru on 8/18/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 import UIKit
@@ -104,7 +104,7 @@ class AddCardController: UIViewController {
             .addLoadingIndicator()
             .present(sender: self)
 
-        // make the request to PAYTPV
+        // make the request to PAYCOMET
         let card = PTPVCard(pan: self.pan, expiryDate: self.expiryDate, cvv: self.cvv)
 
         PTPVAPIClient.shared().addUser(card) { (user, error) in

@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 7/25/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import "PTPVAPIClient.h"

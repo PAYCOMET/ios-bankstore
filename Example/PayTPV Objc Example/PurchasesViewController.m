@@ -3,7 +3,7 @@
 //  PAYTPV Objc Example
 //
 //  Created by Mihail Cristian Dumitru on 8/22/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import "PAYTPV/PAYTPV.h"
@@ -64,7 +64,7 @@
     PTPVUser *user = [[PTPVUser alloc] initWithIdUser:purchase.card.idUser
                                             tokenUser:purchase.card.tokenUser];
 
-    // make the request to PAYTPV
+    // make the request to PAYCOMET
     [[PTPVAPIClient sharedClient] executeRefund:refund forUser:user completion:^(PTPVRefund * _Nullable refund, NSError * _Nullable error) {
         [loader dismissAnimated:true completion:nil];
 

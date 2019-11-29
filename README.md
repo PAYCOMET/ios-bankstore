@@ -3,7 +3,7 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/PAYTPV.svg)](https://img.shields.io/cocoapods/v/PAYTPV.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-The PAYTPV SDK provides easy to use methods for connecting to the PAYTPV API.
+The PAYCOMET SDK provides easy to use methods for connecting to the PAYCOMET API.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -28,7 +28,7 @@ The SDK is compatible with iOS apps supporting iOS 8.0 and later.
 $ gem install cocoapods
 ```
 
-To integrate PAYTPV into your project, specify it in your `Podfile`:
+To integrate PAYCOMET into your project, specify it in your `Podfile`:
 
 ```ruby
 pod 'PAYTPV'
@@ -65,10 +65,10 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate PAYTPV into your project using Carthage, specify it in your `Cartfile`:
+To integrate PAYCOMET into your project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "PayTpv/IOS-SDK" ~> 1.0
+github "PAYCOMET/ios-bankstore" ~> 1.0
 ```
 
 Then, run `carthage update` to build the framework and drag the built `PAYTPV.framework` into your Xcode project.

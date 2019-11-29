@@ -1,8 +1,8 @@
 clean: true
 objc: true
-author: PAYTPV
-author_url: https://www.paytpv.com/
-github_url: https://github.com/PayTpv/IOS-SDK
+author: PAYCOMET
+author_url: https://www.paycomet.com/
+github_url: https://github.com/PAYCOMET/ios-bankstore
 umbrella_header: PAYTPV/PAYTPV.h
 framework_root: .
 module: PAYTPV

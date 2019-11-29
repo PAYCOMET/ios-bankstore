@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 8/7/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  Do not include the characters “[“ or “]”, they will be used to recognize the user of the business.
 
  @param amount Amount of the operation in integer format. 1.00 EURO = 100, 4.50 EUROS = 450...
- @param currency Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ @param currency Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  @param periodicity Frequency of collection from the start date. The number expresses Days. It may not be greater than 365 days.
  @param scoring Optional. Risk score of the transaction. Between 0 and 100
 
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
  Do not include the characters “[“ or “]”, they will be used to recognize the user of the business.
 
  @param amount Amount of the operation in integer format. 1.00 EURO = 100, 4.50 EUROS = 450...
- @param currency Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ @param currency Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  @param periodicity Frequency of collection from the start date. The number expresses Days. It may not be greater than 365 days.
 
  @return A PTPVSubscription instance populated with the provided values
@@ -115,7 +115,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) NSNumber *amount;
 
 /**
- Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  */
 @property (nonatomic, copy, nullable) PTPVCurrency *currency;
 

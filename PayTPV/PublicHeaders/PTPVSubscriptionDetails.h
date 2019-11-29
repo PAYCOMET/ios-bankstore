@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 8/7/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -47,7 +47,7 @@
 @property (nonatomic, copy, nullable) NSString *order;
 
 /**
- Currency of the transaction. @see more details at http://developers.paytpv.com/en/documentacion/monedas . @see PTPVCurrency
+ Currency of the transaction. @see more details at https://docs.paycomet.com/en/documentacion/monedas . @see PTPVCurrency
  */
 @property (nonatomic, copy, nullable) PTPVCurrency *currency;
 

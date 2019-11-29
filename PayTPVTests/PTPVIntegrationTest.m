@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 8/4/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
@@ -179,7 +179,7 @@
 //- (void)testAddUserToken {
 //    XCTestExpectation *expectation = [self expectationWithDescription:@"add_user_token"];
 //
-//    NSURL *url = [[NSURL alloc] initWithString:@"https://secure.paytpv.com/gateway/jet_request.php"];
+//    NSURL *url = [[NSURL alloc] initWithString:@"https://api.paycomet.com/gateway/jet_request.php"];
 //    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 //    request.HTTPMethod = @"POST";
 //    NSString *data = @"";

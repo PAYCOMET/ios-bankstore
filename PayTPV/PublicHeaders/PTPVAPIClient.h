@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 7/25/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
      completion:(PTPVAddUserCompletionBlock)completion;
 
 /**
- Registers a user based on a token previously obtained trough the solution BankStore JET. @see http://developers.paytpv.com/en/documentacion/jet-bankstore
+ Registers a user based on a token previously obtained trough the solution BankStore JET. @see https://docs.paycomet.com/en/documentacion/jet-bankstore
 
  @param token Token obtained from javascript
  @param completion The callback to run with the returned PTPVUser object, or an error.

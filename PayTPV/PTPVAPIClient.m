@@ -3,7 +3,7 @@
 //  PAYTPV
 //
 //  Created by Mihail Cristian Dumitru on 7/25/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import "PTPVAPIClient.h"
@@ -14,7 +14,7 @@
 
 #import "PTPVBlocks.h"
 
-static NSString * const APIBaseURL = @"https://secure.paytpv.com/gateway/json-bankstore";
+static NSString * const APIBaseURL = @"https://api.paycomet.com/gateway/json-bankstore";
 static NSString * const APIEndpointAddUser = @"add_user";
 static NSString * const APIEndpointAddUserToken = @"add_user_token";
 static NSString * const APIEndpointInfoUser = @"info_user";

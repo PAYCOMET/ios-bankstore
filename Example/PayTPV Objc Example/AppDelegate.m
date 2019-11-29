@@ -3,7 +3,7 @@
 //  PAYTPV Objc Example
 //
 //  Created by Mihail Cristian Dumitru on 8/14/17.
-//  Copyright © 2017 PAYTPV. All rights reserved.
+//  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
 #import "AppDelegate.h"

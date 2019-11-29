@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PAYTPV  Reference</title>
+    <title>PAYCOMET  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,18 +10,18 @@
     
   </head>
   <body>
-    <a title="PAYTPV  Reference"></a>
+    <a title="PAYCOMET  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PAYTPV Docs</a> (100% documented)</p>
-        <p class="header-right"><a href="https://github.com/PayTpv/IOS-SDK"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p><a href="index.html">PAYCOMET Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PAYCOMET/ios-bankstore"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">PAYTPV Reference</a>
+        <a href="index.html">PAYCOMET Reference</a>
         <img id="carat" src="img/carat.png" />
-        PAYTPV  Reference
+        PAYCOMET  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -152,12 +152,12 @@
         <section>
           <section class="section">
             
-            <h1 id='paytpv-ios-sdk' class='heading'>PAYTPV iOS SDK</h1>
+            <h1 id='paytpv-ios-sdk' class='heading'>PAYCOMET iOS SDK</h1>
 
 <p><a href="https://img.shields.io/cocoapods/v/PAYTPV.svg"><img src="https://img.shields.io/cocoapods/v/PAYTPV.svg" alt="CocoaPods Compatible"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
 
-<p>The PAYTPV SDK provides easy to use methods for connecting to the PAYTPV API.</p>
+<p>The PAYCOMET SDK provides easy to use methods for connecting to the PAYCOMET API.</p>
 
 <ul>
 <li><a href="#requirements">Requirements</a></li>
@@ -182,8 +182,8 @@
 <pre class="highlight shell"><code><span class="gp">$ </span>gem install cocoapods
 </code></pre>
 
-<p>To integrate PAYTPV into your project, specify it in your <code>Podfile</code>:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'PAYTPV'</span>
+<p>To integrate PAYCOMET into your project, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'PAYCOMET'</span>
 </code></pre>
 
 <p>Example Podfile:</p>
@@ -192,7 +192,7 @@
 <span class="n">use_frameworks!</span>
 
 <span class="n">target</span> <span class="s1">'&lt;TARGET_NAME&gt;'</span> <span class="k">do</span>
-  <span class="n">pod</span> <span class="s1">'PAYTPV'</span>
+  <span class="n">pod</span> <span class="s1">'PAYCOMET'</span>
 <span class="k">end</span>
 </code></pre>
 
@@ -210,7 +210,7 @@
 <span class="gp">$ </span>brew install carthage
 </code></pre>
 
-<p>To integrate PAYTPV into your project using Carthage, specify it in your <code>Cartfile</code>:</p>
+<p>To integrate PAYCOMET into your project using Carthage, specify it in your <code>Cartfile</code>:</p>
 <pre class="highlight plaintext"><code>github "PayTpv/IOS-SDK" ~&gt; 1.0
 </code></pre>
 
@@ -222,7 +222,7 @@
 <p>After you&rsquo;re done installing the SDK, you need to create the configuration object with your terminal details:</p>
 
 <p>Swift:</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PAYTPV</span>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PAYCOMET</span>
 
 <span class="k">let</span> <span class="nv">config</span> <span class="o">=</span> <span class="kt">PTPVConfiguration</span><span class="p">(</span><span class="nv">merchantCode</span><span class="p">:</span> <span class="s">"MERCHANT_CODE"</span><span class="p">,</span> <span class="nv">terminal</span><span class="p">:</span> <span class="s">"TERMINAL"</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="s">"PASSWORD"</span><span class="p">,</span> <span class="nv">jetId</span><span class="p">:</span> <span class="s">"JETID"</span><span class="p">)</span>
 <span class="kt">PTPVAPIClient</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="n">configuration</span> <span class="o">=</span> <span class="n">config</span>
@@ -329,7 +329,7 @@ PTPVCard *card = [[PTPVCard alloc] initWithPan:@"4111111111111111"
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://www.paytpv.com/" target="_blank" rel="external">PAYTPV</a>. All rights reserved. (Last updated: 2017-10-09)</p>
+          <p>&copy; 2017 <a class="link" href="https://www.paycomet.com/" target="_blank"  rel="external">PAYCOMET</a>. All rights reserved. (Last updated: 2017-10-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
