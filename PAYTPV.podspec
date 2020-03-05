@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PAYTPV'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'PAYTPV iOS SDK.'
   s.homepage         = 'https://github.com/PAYCOMET/ios-bankstore'
   s.license          = { :type => 'BSD', :file => 'LICENSE' }
