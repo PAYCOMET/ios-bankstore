@@ -16,6 +16,9 @@ The PAYCOMET SDK provides easy to use methods for connecting to the PAYCOMET API
 
 The SDK is compatible with iOS apps supporting iOS 8.0 and later.
 
+<strong>Important</strong><br>
+Integration via PAYCOMET iOS SDK does not comply with PCI standards, to perform a mobile integration that complies with PCI standards you can integrate using <a href='https://docs.paycomet.com/en/documentacion/bankstore_jetiframe'>BankStore JET-IFRAME</a>.
+
 ---
 
 ## Installation
