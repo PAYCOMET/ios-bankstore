@@ -24,3 +24,9 @@ xcuserdata/
 *.dSYM
 
 Pods/
+
+.DS_Store
+.build/
+Example/.DS_Store
+Example/PAYTPV Swift Example.xcodeproj/project.xcworkspace/xcshareddata/
+PAYTPV.xcodeproj/project.xcworkspace/xcshareddata/

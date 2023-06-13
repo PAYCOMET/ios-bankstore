@@ -8,7 +8,7 @@
 
 #import "PTPVAPIRequest.h"
 
-#import "NSMutableURLRequest+PAYTPV.h"
+#import "NSMutableURLRequest+PayTPV.h"
 #import "PTPVDispatchFunctions.h"
 #import "PTPVAPIClient.h"
 #import "PTPVAPIClient+Private.h"

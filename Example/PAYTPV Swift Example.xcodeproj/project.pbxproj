@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,23 +18,8 @@
 		1EE0993A1F41BA32003FFB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE099391F41BA32003FFB9A /* AppDelegate.swift */; };
 		1EE099411F41BA32003FFB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE099401F41BA32003FFB9A /* Assets.xcassets */; };
 		1EE099441F41BA32003FFB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE099421F41BA32003FFB9A /* LaunchScreen.storyboard */; };
-		1EE099521F41BA9A003FFB9A /* PayTPV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE099511F41BA9A003FFB9A /* PayTPV.framework */; };
-		1EE099531F41BA9A003FFB9A /* PayTPV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE099511F41BA9A003FFB9A /* PayTPV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D306014E2A3384FE0034AC94 /* PAYTPV in Frameworks */ = {isa = PBXBuildFile; productRef = D306014D2A3384FE0034AC94 /* PAYTPV */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1EE099541F41BA9A003FFB9A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1EE099531F41BA9A003FFB9A /* PayTPV.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E6825E01F4C319200C45570 /* PurchasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasesViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE099521F41BA9A003FFB9A /* PayTPV.framework in Frameworks */,
+				D306014E2A3384FE0034AC94 /* PAYTPV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +129,15 @@
 				1EE099321F41BA32003FFB9A /* Sources */,
 				1EE099331F41BA32003FFB9A /* Frameworks */,
 				1EE099341F41BA32003FFB9A /* Resources */,
-				1EE099541F41BA9A003FFB9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "PayTPV Swift Example";
+			packageProductDependencies = (
+				D306014D2A3384FE0034AC94 /* PAYTPV */,
+			);
 			productName = "PayTPV Swift Example";
 			productReference = 1EE099361F41BA32003FFB9A /* PayTPV Swift Example.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +154,7 @@
 				TargetAttributes = {
 					1EE099351F41BA32003FFB9A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 37MW3MSTK2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,10 +164,14 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 1EE0992D1F41BA32003FFB9A;
+			packageReferences = (
+				D306014C2A3384FE0034AC94 /* XCRemoteSwiftPackageReference "paycomet-sdk" */,
+			);
 			productRefGroup = 1EE099371F41BA32003FFB9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,7 +311,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -329,12 +322,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37MW3MSTK2;
 				INFOPLIST_FILE = "PayTPV Swift Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.PayTPV-Swift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -342,12 +339,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37MW3MSTK2;
 				INFOPLIST_FILE = "PayTPV Swift Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.PayTPV-Swift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -373,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D306014C2A3384FE0034AC94 /* XCRemoteSwiftPackageReference "paycomet-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.airtouchmedia.com/iOS/paycomet-sdk";
+			requirement = {
+				branch = "spm-support";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D306014D2A3384FE0034AC94 /* PAYTPV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D306014C2A3384FE0034AC94 /* XCRemoteSwiftPackageReference "paycomet-sdk" */;
+			productName = PAYTPV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1EE0992E1F41BA32003FFB9A /* Project object */;
 }

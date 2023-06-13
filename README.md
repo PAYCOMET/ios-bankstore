@@ -9,12 +9,13 @@ The PAYCOMET SDK provides easy to use methods for connecting to the PAYCOMET API
 - [Installation](#installation)
     - [CocoaPods](#cocoapods)
     - [Carthage](#carthage)
+    - [Swift Package Manager](#spm)
 - [Usage](#usage)
 - [Examples](#examples)
 
 ## Requirements
 
-The SDK is compatible with iOS apps supporting iOS 8.0 and later.
+The SDK is compatible with iOS apps supporting iOS 11.0 and later.
 
 <strong>Important</strong><br>
 Integration via PAYCOMET iOS SDK does not comply with PCI standards, to perform a mobile integration that complies with PCI standards you can integrate using <a href='https://docs.paycomet.com/en/documentacion/bankstore_jetiframe'>BankStore JET-IFRAME</a>.
@@ -41,7 +42,7 @@ Example Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<TARGET_NAME>' do
@@ -75,6 +76,23 @@ github "PAYCOMET/ios-bankstore" ~> 1.0
 ```
 
 Then, run `carthage update` to build the framework and drag the built `PAYTPV.framework` into your Xcode project.
+
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+
+Once you have your Swift package set up, add PAYCOMET as a dependency:
+
+```ogdl
+dependencies: [
+    .package(
+      url: "https://github.com/PAYCOMET/ios-bankstore.git", .upToNextMajor(from: "1.0.0")
+    )
+]
+```
+
+Finally, add `import PayTPV` to your source code.
 
 ---
 
