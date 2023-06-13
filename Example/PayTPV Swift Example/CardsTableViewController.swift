@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PAYTPV
+import PayTPV
 
 @objc protocol CardsTableControllerDelegate {
     func cardsTableController(_ controller: CardsTableViewController, didSelectCard card: Card)
@@ -49,7 +49,7 @@ class CardsTableViewController: UITableViewController {
 
     // MARK: - Helpers
 
-    func onAddButtonPressed() {
+    @objc func onAddButtonPressed() {
         let addCardController = AddCardController()
         addCardController.delegate = self
         self.present(addCardController, animated: true, completion: nil)
@@ -90,7 +90,7 @@ class CardsTableViewController: UITableViewController {
         return true
     }
 
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
 
             // add a loading indicator
@@ -115,7 +115,7 @@ class CardsTableViewController: UITableViewController {
                 }
 
                 // remove the user from the backend
-                ModelStore.remove(card: selectedCard, completion: { (_) in
+                ModelStore.remove(card: selectedCard, completion: { 
                     self.loadRemoteData()
                 })
             })

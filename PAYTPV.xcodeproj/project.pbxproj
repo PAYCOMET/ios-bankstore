@@ -70,6 +70,8 @@
 		1EDC5BA51F3482BC00AC0985 /* PTPVPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDC5BA31F3482BC00AC0985 /* PTPVPurchase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EDC5BA61F3482BC00AC0985 /* PTPVPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5BA41F3482BC00AC0985 /* PTPVPurchase.m */; };
 		1EDC5BAA1F34A35C00AC0985 /* PTPVIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5BA91F34A35C00AC0985 /* PTPVIntegrationTest.m */; };
+		D399CF452A33755400AB86D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1EE099551F41F387003FFB9A /* README.md */; };
+		D3D4D5182A33174E00F90A31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4D5172A33174E00F90A31 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,7 @@
 		1EDC5BA91F34A35C00AC0985 /* PTPVIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPVIntegrationTest.m; sourceTree = "<group>"; };
 		1EDC5BAB1F34A52700AC0985 /* PTPVTestUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPVTestUtils.h; sourceTree = "<group>"; };
 		1EE099551F41F387003FFB9A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D3D4D5172A33174E00F90A31 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +308,7 @@
 				1E82FE331F41917200B0B8A3 /* PAYTPV.podspec */,
 				1E82FE351F4193CC00B0B8A3 /* LICENSE */,
 				1EE099551F41F387003FFB9A /* README.md */,
+				D3D4D5172A33174E00F90A31 /* Package.swift */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -520,6 +524,7 @@
 				TargetAttributes = {
 					1E589C7C1F274E3D00F141B4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1430;
 						ProvisioningStyle = Manual;
 					};
 					1E589C851F274E3D00F141B4 = {
@@ -531,9 +536,10 @@
 			};
 			buildConfigurationList = 1E589C771F274E3D00F141B4 /* Build configuration list for PBXProject "PAYTPV" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1E589C731F274E3D00F141B4;
@@ -554,6 +560,7 @@
 			files = (
 				1E82FE361F4193CC00B0B8A3 /* LICENSE in Resources */,
 				1E82FE341F41917200B0B8A3 /* PAYTPV.podspec in Resources */,
+				D399CF452A33755400AB86D4 /* README.md in Resources */,
 				1E77F59E1F399569009F88C1 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EDC5B921F34756400AC0985 /* PTPVTestConstants.m in Sources */,
+				D3D4D5182A33174E00F90A31 /* Package.swift in Sources */,
 				1EDC5BA61F3482BC00AC0985 /* PTPVPurchase.m in Sources */,
 				1E73DDBA1F3D9CD800479730 /* PTPVRemoteIP.m in Sources */,
 				1E77AC711F3CA61A00018564 /* PTPVResponse.m in Sources */,
@@ -738,6 +746,7 @@
 		1E589C921F274E3D00F141B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -746,17 +755,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = paytpv/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.paytpv-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		1E589C931F274E3D00F141B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -765,19 +777,22 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = paytpv/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.paytpv-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		1E589C951F274E3D00F141B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3JZ5N8TGH3;
 				INFOPLIST_FILE = paytpvTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytpv.paytpvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -787,8 +802,10 @@
 		1E589C961F274E3D00F141B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3JZ5N8TGH3;
 				INFOPLIST_FILE = paytpvTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytpv.paytpvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

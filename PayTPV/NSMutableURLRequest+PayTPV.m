@@ -6,7 +6,7 @@
 //  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
-#import "NSMutableURLRequest+PAYTPV.h"
+#import "NSMutableURLRequest+PayTPV.h"
 
 @implementation NSMutableURLRequest (PAYTPV)
 

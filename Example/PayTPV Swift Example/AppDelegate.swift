@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import PAYTPV
+import PayTPV
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // TODO: - Replace with your test credentials
         PTPVAPIClient.shared().configuration = PTPVConfiguration(merchantCode: "",

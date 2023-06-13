@@ -26,7 +26,7 @@ class AlertBuilder {
         return self
     }
 
-    func add(actionWithTitle title: String?, style: UIAlertActionStyle = .default, handler: ((UIAlertAction) -> Void)? = nil) -> Self {
+    func add(actionWithTitle title: String?, style: UIAlertAction.Style = .default, handler: ((UIAlertAction) -> Void)? = nil) -> Self {
         self.alertController.addAction(
             UIAlertAction(
                 title: title,
@@ -43,8 +43,8 @@ class AlertBuilder {
         alertController.view.addSubview(indicator)
 
         let views = ["pending" : alertController.view, "indicator" : indicator]
-        var constraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[indicator]-(-50)-|", options: [], metrics: nil, views: views)
-        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|[indicator]|", options: [], metrics: nil, views: views)
+        var constraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[indicator]-(-50)-|", options: [], metrics: nil, views: views as [String : Any])
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|[indicator]|", options: [], metrics: nil, views: views as [String : Any])
         alertController.view.addConstraints(constraints)
 
         indicator.isUserInteractionEnabled = false

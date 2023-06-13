@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PAYTPV
+import PayTPV
 
 @objc protocol AddCardDelegate {
     func addCardController(_ controller: AddCardController, didFinishAddingCard card: Card)
@@ -71,7 +71,7 @@ class AddCardController: UIViewController {
         do {
             let regex = try NSRegularExpression(pattern: regexString, options: .caseInsensitive)
 
-            return regex.numberOfMatches(in: string, options: [], range: NSRange(location: 0, length: string.characters.count)) > 0
+            return regex.numberOfMatches(in: string, options: [], range: NSRange(location: 0, length: string.count)) > 0
         } catch (_) {
 
         }
@@ -126,7 +126,7 @@ class AddCardController: UIViewController {
 
                 // send the user token to the backend
                 let card = Card(id: user.idUser ?? "", token: user.tokenUser ?? "", name: self.pan)
-                ModelStore.add(card: card, completion: { (_) in
+                ModelStore.add(card: card, completion: {
                     self.dismiss(animated: true, completion: {
                         self.delegate?.addCardController(self, didFinishAddingCard: card)
                     })
@@ -151,7 +151,7 @@ extension AddCardController: UITextFieldDelegate {
             return true
         }
 
-        let newLength = text.length + string.characters.count - range.length
+        let newLength = text.length + string.count - range.length
         if newLength == 0 {
             return true
         }

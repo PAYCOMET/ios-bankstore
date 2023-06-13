@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PAYTPV
+import PayTPV
 
 class PurchasesViewController: UITableViewController {
 

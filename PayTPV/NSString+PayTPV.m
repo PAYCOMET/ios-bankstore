@@ -6,7 +6,7 @@
 //  Copyright © 2017 PAYCOMET. All rights reserved.
 //
 
-#import "NSString+PAYTPV.h"
+#import "NSString+PayTPV.h"
 
 @implementation NSString (PAYTPV)
 

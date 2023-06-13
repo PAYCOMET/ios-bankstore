@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PAYTPV
+import PayTPV
 
 class ProductsTableViewController: UITableViewController {
 
@@ -40,7 +40,7 @@ class ProductsTableViewController: UITableViewController {
 
     // MARK: - Helpers
 
-    func onPurchasesButtonPressed() {
+    @objc func onPurchasesButtonPressed() {
         self.navigationController?.pushViewController(PurchasesViewController(), animated: true)
     }
 
